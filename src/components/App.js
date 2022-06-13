@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 function App() {
   const [events, setEvents] = useState([]);
+  const [filter, setFilter] = useState('');
 
   useEffect(() => {
     GetApiData().then((dataApi) => {
@@ -15,9 +16,16 @@ function App() {
       setEvents(dataDate);
     });
   }, []);
+
+  //handling functions
+
+  const handleChangeFilter = (filterValue) => {
+    setFilter(filterValue);
+  };
+
   return (
     <div>
-      <Filter />
+      <Filter filter={filter} handleChangeFilter={handleChangeFilter} />
       <EventList events={events} />
     </div>
   );
