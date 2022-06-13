@@ -1,6 +1,7 @@
 //import '../styles/App.scss';
 import '../styles/App.scss';
 import GetApiData from '../service/fetch';
+import Filters from './Filters';
 import EventList from './EventList';
 import { useEffect, useState } from 'react';
 
@@ -16,6 +17,7 @@ function App() {
   }, []);
   return (
     <div>
+      <Filters />
       <EventList events={events} />
     </div>
   );

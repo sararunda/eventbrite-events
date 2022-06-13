@@ -5,14 +5,15 @@ const GetApiData = () => {
   )
     .then((response) => response.json())
     .then((data) => {
-      const dataClean = data.events.map((event, index) => {
+      const dataClean = data.events.map((event) => {
         return {
           id: event.id,
           photo: event.logo.original.url,
           title: event.name.text,
           date: event.start.local + event.end.local,
-          city: event.venue.address.city,
-          ticket_free: true,
+          city: event.venue?.address.city ?? 'online',
+          ticket_free: event.ticket_free,
+          online_event: event.online_event,
         };
       });
 
