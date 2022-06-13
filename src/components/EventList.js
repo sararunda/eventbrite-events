@@ -4,8 +4,18 @@ const EventList = (props) => {
     console.log(props.events.city);
     return props.events
 
-      .filter((event) =>
-        props.filter === '' ? true : event.city === props.filter
+      .filter(
+        (event) => {
+          if (props.filter === 'online') {
+            return event.city === 'online';
+          } else if (props.filter === 'physical') {
+            return event.city !== 'online';
+          } else {
+            return true;
+          }
+        }
+
+        //props.filter === '' ? true : event.city === props.filter
       )
 
       .map((event, index) => {
