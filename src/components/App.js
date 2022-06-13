@@ -1,7 +1,7 @@
 //import '../styles/App.scss';
 import '../styles/App.scss';
 import GetApiData from '../service/fetch';
-import Filters from './Filters';
+import Filter from './Filter';
 import EventList from './EventList';
 import { useEffect, useState } from 'react';
 
@@ -17,7 +17,7 @@ function App() {
   }, []);
   return (
     <div>
-      <Filters />
+      <Filter />
       <EventList events={events} />
     </div>
   );
