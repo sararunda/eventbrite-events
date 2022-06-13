@@ -12,7 +12,7 @@ const GetApiData = () => {
           title: event.name.text,
           date: event.start.local + event.end.local,
           city: event.venue?.address.city ?? 'online',
-          ticket_free: event.ticket_free,
+          ticket_free: event.is_free,
           online_event: event.online_event,
         };
       });

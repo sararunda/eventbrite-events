@@ -25,8 +25,12 @@ function App() {
 
   return (
     <div>
-      <Filter filter={filter} handleChangeFilter={handleChangeFilter} />
-      <EventList events={events} />
+      <Filter
+        filter={filter}
+        handleChangeFilter={handleChangeFilter}
+        events={events}
+      />
+      <EventList events={events} filter={filter} />
     </div>
   );
 }

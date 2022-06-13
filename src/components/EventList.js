@@ -1,13 +1,20 @@
 import EventItem from './EventItem';
 const EventList = (props) => {
   const renderList = () => {
-    return props.events.map((event, index) => {
-      return (
-        <li key={index}>
-          <EventItem events={event} />
-        </li>
-      );
-    });
+    console.log(props.events.city);
+    return props.events
+
+      .filter((event) =>
+        props.filter === '' ? true : event.city === props.filter
+      )
+
+      .map((event, index) => {
+        return (
+          <li key={index}>
+            <EventItem events={event} />
+          </li>
+        );
+      });
   };
 
   return renderList().length > 0 ? <ul>{renderList()}</ul> : <p>Not found</p>;
