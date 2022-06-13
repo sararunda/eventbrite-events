@@ -8,7 +8,7 @@ const GetApiData = () => {
       const dataClean = data.events.map((event, index) => {
         return {
           id: event.id,
-          photo: event.url,
+          photo: event.logo.original.url,
           title: event.name.text,
           date: event.start.local + event.end.local,
           city: event.venue.address.city,

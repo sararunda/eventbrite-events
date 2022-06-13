@@ -1,4 +1,5 @@
 //import '../styles/App.scss';
+import '../styles/App.scss';
 import GetApiData from '../service/fetch';
 import EventList from './EventList';
 import { useEffect, useState } from 'react';
