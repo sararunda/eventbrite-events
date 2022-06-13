@@ -1,9 +1,10 @@
 //import '../styles/App.scss';
 import GetApiData from '../service/fetch';
+import EventList from './EventList';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [event, setEvents] = useState([]);
+  const [events, setEvents] = useState([]);
 
   useEffect(() => {
     GetApiData().then((dataApi) => {
@@ -14,7 +15,7 @@ function App() {
   }, []);
   return (
     <div>
-      <h1>hola mundo</h1>
+      <EventList events={events} />
     </div>
   );
 }
