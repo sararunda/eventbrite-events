@@ -1,17 +1,29 @@
 .list{
+    padding: 0;
+    margin-left: auto;
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+    
     &__title-events{
     width: 300px;
     height: 100px;
     color: #3A3A3A;
     background-color: #F0EFEE;
     text-align: center;
-    margin-left: 10px;
+    
     padding-top: 50px;
     border-radius: 5px;
        
        
     }
 }
+@media all and (min-width: 600px) {
+    .list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+       
+    }
+  }
+
