@@ -10,6 +10,7 @@
     }
     &__form{
         margin-top: 10px;
+        margin-bottom: 70px;
         margin-left: 20px;
         &__select{
             color: #535252;
@@ -25,10 +26,44 @@
         }
         
     }
+    &__title-enjoy{
+        width: 200px;
+        background-color: #F0EFEE;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin: 0 100px;
+        padding: 0 150px 20px 0;
+        &::first-letter{
+            font-size: 40px;
+            color: #e85435;
+        }
+        
+    }
+    
+    &__img-concert{
+        width: 350px;
+        margin: 0 100px;
+        border-radius: 10px;
+    }
 }
 @media all and (min-width: 600px) {
     .container-filter {
+        &__form{
+            text-align: center;
+            &__select{
+                margin-top: 15px;
+            }
+        }
         flex-direction: row;
+        &__title-enjoy{
+            width: 100%;
+            margin: 0 150px;
+        }
+        
+        &__img-concert{
+            border-right: #F0EFEE 100vw solid;
+            margin: 0 150px;
+        }
        
     }
   }

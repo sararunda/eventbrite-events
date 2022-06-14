@@ -28,7 +28,10 @@ const EventList = (props) => {
   };
 
   return renderList().length > 0 ? (
-    <ul className="list">{renderList()}</ul>
+    <ul className="list">
+      <h2>Eventos:</h2>
+      {renderList()}
+    </ul>
   ) : (
     <p>Not found</p>
   );
