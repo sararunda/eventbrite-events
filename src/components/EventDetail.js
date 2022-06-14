@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-const EventItem = (props) => {
+const EventDetail = (props) => {
   const startDate = new Date(props.events.start_date);
   const endDate = new Date(props.events.end_date);
 
@@ -15,10 +15,10 @@ const EventItem = (props) => {
         {startDate.toDateString()} - {endDate.toDateString()}
       </p>
       <p className="container-event__city-event">{props.events.city}</p>
-      <Link className="link-info" to={`/event/${props.events.id}`}>
-        + info
+      <Link className="link-info" to={`/`}>
+        - back
       </Link>
     </div>
   );
 };
-export default EventItem;
+export default EventDetail;

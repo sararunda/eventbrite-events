@@ -3,7 +3,9 @@ import '../styles/App.scss';
 import GetApiData from '../service/fetch';
 import Filter from './Filter';
 import EventList from './EventList';
+import EventDetail from './EventDetail';
 import { useEffect, useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   const [events, setEvents] = useState([]);
@@ -24,14 +26,23 @@ function App() {
   };
 
   return (
-    <div>
-      <Filter
-        filter={filter}
-        handleChangeFilter={handleChangeFilter}
-        events={events}
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div>
+            <Filter
+              filter={filter}
+              handleChangeFilter={handleChangeFilter}
+              events={events}
+            />
+            <EventList events={events} filter={filter} />
+          </div>
+        }
       />
-      <EventList events={events} filter={filter} />
-    </div>
+      console.log(events)
+      <Route path="/event/:id" element={<EventDetail events={events} />} />
+    </Routes>
   );
 }
 
