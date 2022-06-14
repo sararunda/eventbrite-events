@@ -27,6 +27,10 @@ const EventList = (props) => {
       });
   };
 
-  return renderList().length > 0 ? <ul>{renderList()}</ul> : <p>Not found</p>;
+  return renderList().length > 0 ? (
+    <ul className="list">{renderList()}</ul>
+  ) : (
+    <p>Not found</p>
+  );
 };
 export default EventList;
