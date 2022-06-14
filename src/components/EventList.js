@@ -33,7 +33,7 @@ const EventList = (props) => {
       {renderList()}
     </ul>
   ) : (
-    <p>cargando</p>
+    <p>loading</p>
   );
 };
 export default EventList;
