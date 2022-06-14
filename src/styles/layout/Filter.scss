@@ -1,0 +1,26 @@
+.container-filter{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 50px;
+    &__logo{
+        
+        height: 50px;
+    }
+    &__form{
+        margin-top: 10px;
+        margin-left: 20px;
+        &__select{
+            color: #535252;
+            width: 150px;
+            margin-left: 10px;
+            background-color: #F0EFEE;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Rubik', sans-serif;
+            display: inline-block;
+            outline: 0;
+        }
+        
+    }
+}

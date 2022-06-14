@@ -4,11 +4,16 @@ const Filter = (props) => {
     props.handleChangeFilter(filterValue);
   };
   return (
-    <div>
-      <img src="images/eventbrite.png" alt="" />
-      <form className="form" action="">
+    <div className="container-filter">
+      <img
+        className="container-filter__logo"
+        src="images/eventbrite.png"
+        alt="logo eventbrite"
+      />
+      <form className="container-filter__form" action="">
         <label htmlFor="label">Event type:</label>
         <select
+          className="container-filter__form__select"
           name=""
           id=""
           value={props.filter}
