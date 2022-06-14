@@ -2,6 +2,16 @@
     list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    
-    
+    &__title-events{
+    width: 300px;
+    height: 100px;
+    color: #3A3A3A;
+    background-color: #F0EFEE;
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 50px;
+    border-radius: 5px;
+       
+       
+    }
 }

@@ -29,7 +29,7 @@ const EventList = (props) => {
 
   return renderList().length > 0 ? (
     <ul className="list">
-      <h2>Eventos:</h2>
+      <h2 className="list__title-events">Events:</h2>
       {renderList()}
     </ul>
   ) : (
