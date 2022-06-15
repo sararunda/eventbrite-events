@@ -29,9 +29,9 @@ _A web platform to show events in San Francisco and save the information of thes
 #### First condition:
 Create an EB account and then create 3 events in Madrid and 3 in San Francisco with different start and end dates.
 #### Specific tasks:
-- [ ]  Create a Landing Page with a list of the events you created in the pre-condition.
-- [ ]  There will be at least two filters on the top: online events and physical events.
-- [ ]  Create an Event page with image, event description, title, date and tickets button.
+- [x]  Create a Landing Page with a list of the events you created in the pre-condition.
+- [x]  There will be at least two filters on the top: online events and physical events.
+- [x]  Create an Event page with image, event description, title, date and tickets button.
 - [ ]  Create a tickets page with name, price, description, show free and paid ticket and status (available or sold out).
 - [ ]  Create datebase and save all the information there (create all the tables and fields).
 
