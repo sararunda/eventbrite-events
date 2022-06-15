@@ -1,7 +1,6 @@
 import EventItem from './EventItem';
 const EventList = (props) => {
   const renderList = () => {
-    console.log(props.events.city);
     return props.events
 
       .filter(
