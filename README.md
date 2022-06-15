@@ -58,6 +58,8 @@ The content of "li" is created in a separate component called "EventItem" where 
 The "info" button is created to redirect to a separate component called "EventDetail". When you click on "info" the url address changes with the "id" of the selected card, this is done through Routes. In this event we want to show some information used in the "EventItem" but incorporating new information coming from the API. How does our application know that it has to link the generated url with the id and show the card data?
 To do this, it is necessary to perform a "find" of the events to establish a comparison between our id of each event and the id generated in "dataPath". This way, we get back an object that we can pass to the "EventDetail" component and use it to paint the new data by "props".
 It is advantageous to use the paths in this part because it allows us to get a specific page of the event we are selecting and we could, for example, share this page without doing the same "click path".
+
+
 Documentation for the routes: https://reactrouter.com/docs/en/v6/getting-started/tutorial 
 
 
