@@ -12,7 +12,7 @@ $ npm install
 $ npm start
 ```
 
-## A website will be developed with the following characteristics:
+## Tech stack:
 Language: English.
 
 Using HTML, Sass, Javascript, React.
