@@ -35,7 +35,7 @@ Create an EB account and then create 3 events in Madrid and 3 in San Francisco w
 - [x]  Create an Event page with image, event description, title, date and tickets button.
 - [ ]  Create a tickets page with name, price, description, show free and paid ticket and status (available or sold out).
 - [ ]  Create datebase and save all the information there (create all the tables and fields).
-#### How did I make the specific ones marked? 🚀
+### How did I make the specific ones marked? 🚀
 - To use the API it was necessary to create a token, as stated in Eventbrite's documentation https://www.eventbrite.com/platform/api#/introduction/about-our-api and then use the api created with my token and with the necessary expansions that I am going to use as properties, for example, for the address of events.
 - the url for the fetch request would be: https://www.eventbriteapi.com/v3/organizations/1010195270413/events/?{MYTOKEN}expand=venue 
 - I created an Eventbrite account to generate 6 events, 3 for San Francisco and 3 for Madrid, with different dates, different prices and different types of events (physical or online) I then published them in private viewing.
@@ -53,6 +53,11 @@ Create an EB account and then create 3 events in Madrid and 3 in San Francisco w
 - The "info" button is created to redirect to a separate component called **"EventDetail"**. When you click on "info" the url address changes with the "id" of the selected card, this is done through Routes. In this event we want to show some information used in the "EventItem" but incorporating new information coming from the API. 
 
 Documentation for the routes: https://reactrouter.com/docs/en/v6/getting-started/tutorial 
+
+### Future considerations/improvements :bulb:
+- Expand the url with the description and the price of the tickets to have access to the properties and to be able to paint them in the "EventDetail" component.
+- Save the information searched in LocalStorage in the "EventDetail" component and in the App component set a condition when I get the "datapath" to ask if the clicked component is LocalSotrage.
+- Create a database to save event information.
 
 
 
