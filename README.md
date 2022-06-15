@@ -12,7 +12,7 @@ $ npm install
 $ npm start
 ```
 
-## 1.Tech stack:
+## 1.Tech stack🛠️:
 Language: English.
 
 Using HTML, Sass, Javascript, React.
@@ -59,7 +59,7 @@ Documentation for the routes: https://reactrouter.com/docs/en/v6/getting-started
 - Save the information searched in LocalStorage in the "EventDetail" component and in the App component set a condition when I get the "datapath" to ask if the clicked component is LocalSotrage.
 - Create a database to save event information.
 
-## 3.Layout and styles
+## 3.Layout and styles :art:
 
 
 ![maquetacion](https://user-images.githubusercontent.com/64798006/173825230-74cfc943-8d83-4d2a-aae9-7a29f3b07e43.PNG)
