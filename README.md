@@ -5,11 +5,13 @@
 
 # Eventbrite technical test
 #### url to visualise the project: https://sararunda.github.io/eventbrite-events/ 
-### Previous steps:
-- Install the local dependencies by running the following command in the terminal:
-**npm install**
-- Start the project with the command:
-**npm start**
+### Run the project:
+
+```sh
+$ npm install
+$ npm start
+```
+
 ## A website will be developed with the following characteristics:
 Language: English.
 
