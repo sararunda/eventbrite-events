@@ -12,7 +12,7 @@ $ npm install
 $ npm start
 ```
 
-## Tech stack:
+## 1.Tech stack:
 Language: English.
 
 Using HTML, Sass, Javascript, React.
@@ -24,7 +24,7 @@ Use of routes for web browsing
 Using git for project version control. 
 
 Publication of the result on the Internet using GitHub Pages.
-## Requirements and functions:
+## 2.Requirements and functions:
 _A web platform to show events in San Francisco and save the information of these events in a database._
 #### First condition:
 Create an EB account and then create 3 events in Madrid and 3 in San Francisco with different start and end dates.
@@ -58,6 +58,17 @@ Documentation for the routes: https://reactrouter.com/docs/en/v6/getting-started
 - Expand the url with the description and the price of the tickets to have access to the properties and to be able to paint them in the "EventDetail" component.
 - Save the information searched in LocalStorage in the "EventDetail" component and in the App component set a condition when I get the "datapath" to ask if the clicked component is LocalSotrage.
 - Create a database to save event information.
+
+## 3.Layout and styles
+
+
+![maquetacion](https://user-images.githubusercontent.com/64798006/173825230-74cfc943-8d83-4d2a-aae9-7a29f3b07e43.PNG)
+
+- Responsive design for mobile, tablet and desktop (Formatting changes from 600px onwards) using mediaqueries.
+- SCSS and BEM format for styles.
+- Grid for adapting lists to different formats.
+- SCSS files divided according to each JS component.
+
 
 
 
