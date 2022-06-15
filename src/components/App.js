@@ -5,7 +5,7 @@ import Filter from './Filter';
 import EventList from './EventList';
 import EventDetail from './EventDetail';
 import { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation, matchPath } from 'react-router-dom';
 
 function App() {
   const [events, setEvents] = useState([]);
@@ -24,6 +24,12 @@ function App() {
   const handleChangeFilter = (filterValue) => {
     setFilter(filterValue);
   };
+  //event details
+  const { pathname } = useLocation();
+  const dataPath = matchPath('/event/:id', pathname);
+
+  const eventId = dataPath !== null ? dataPath.params.id : null;
+  const eventDetail = events.find((event) => event.id === eventId);
 
   return (
     <Routes>
@@ -41,7 +47,12 @@ function App() {
         }
       />
       console.log(events)
-      <Route path="/event/:id" element={<EventDetail events={events} />} />
+      <Route
+        path="/event/:id"
+        element={
+          <EventDetail events={eventDetail === undefined ? {} : eventDetail} />
+        }
+      />
     </Routes>
   );
 }
