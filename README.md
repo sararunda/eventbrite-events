@@ -70,6 +70,11 @@ Documentation for the routes: https://reactrouter.com/docs/en/v6/getting-started
 - SCSS files divided according to each JS component.
 
 
+#### :raising_hand: Author:
+
+Sara Fernández
+
+
 
 
 
