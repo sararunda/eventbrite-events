@@ -54,11 +54,6 @@ Create an EB account and then create 3 events in Madrid and 3 in San Francisco w
 
 Documentation for the routes: https://reactrouter.com/docs/en/v6/getting-started/tutorial 
 
-### Future considerations/improvements :bulb:
-- Expand the url with the description and the price of the tickets to have access to the properties and to be able to paint them in the "EventDetail" component.
-- Save the information searched in LocalStorage in the "EventDetail" component and in the App component set a condition when I get the "datapath" to ask if the clicked component is LocalSotrage.
-- Create a database to save event information.
-
 ## 3.Layout and styles :art:
 
 
@@ -68,6 +63,31 @@ Documentation for the routes: https://reactrouter.com/docs/en/v6/getting-started
 - SCSS and BEM format for styles.
 - Grid for adapting lists to different formats.
 - SCSS files divided according to each JS component.
+
+## 4.Future considerations/improvements :bulb:
+- Expand the url with the description and the price of the tickets to have access to the properties and to be able to paint them in the "EventDetail" component.
+- Save the information searched in LocalStorage in the "EventDetail" component and in the App component set a condition when I get the "datapath" to ask if the clicked component is LocalSotrage.
+- Create a database to save event information. I would create the data storage to store the data, for example, of the user (email, passwords, name, relation with the events) because the events themselves come from a private api. 
+To create the database, I would start a new project to configure it from scratch and use it as a local server, these would be the steps to configure this new project:
+
+  ``npm init`` (to generate json)
+ 
+  ``npm install express``
+ 
+  ``npm install cors``
+  
+ Create src folder with an index.js file, where the express and cors dependencies will be imported.
+ 
+ Configure express with the code:
+ 
+``server.use(cors());
+server.use(express.json());``
+``const serverPort = 4000;
+server.listen(serverPort, () => {
+  console.log(`Server listening at http://localhost:${serverPort}`);``
+  
+  Once the server is configured, I would add the front-end project to this application.
+
 
 
 #### :raising_hand: Author:
