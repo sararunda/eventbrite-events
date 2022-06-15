@@ -44,7 +44,7 @@ Create an EB account and then create 3 events in Madrid and 3 in San Francisco w
 ![components](https://user-images.githubusercontent.com/64798006/173798064-ff094b00-3e0e-4dfd-8f2d-5ae70bbe9448.PNG)
 
 
-- The diagram shows that the application is divided into 5 components. All components share data with each other, with App being the root of all of them. First of all, the **"filter"** component has been created, in which I have chosen to make it with a _"form"_ and a _"filter"_ of type _"select"_ in which you can choose to show the online, physical and all of them.
+- The diagram shows that the application is divided into 5 components. All components share data with each other, with **App** being the root of all of them. First of all, the **"filter"** component has been created, in which I have chosen to make it with a _"form"_ and a _"filter"_ of type _"select"_ in which you can choose to show the online, physical and all of them.
 
 - The events are displayed in the **"EventList"** component created to paint the lists, so a _"filter"_ and a _"map"_ are necessary to render them. The main part of this component is the list of all events.
 
