@@ -5,7 +5,7 @@
 
 # Eventbrite technical test
 #### url to visualise the project: https://sararunda.github.io/eventbrite-events/ 
-### Previos steps:
+### Previous steps:
 - **Clone** this repository
 - Open a terminal in the repository root folder.
 - Install the local dependencies by running the following command in the terminal:
