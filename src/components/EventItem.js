@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 const EventItem = (props) => {
   const startDate = new Date(props.events.start_date);
   const endDate = new Date(props.events.end_date);
-  console.log(props.events);
 
   return (
     <div className="container-event">
